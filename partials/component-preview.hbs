@@ -2,7 +2,12 @@
   {{!> example-output }}
   <script>
   window.addEventListener('load', function () {
-    require('react-dom').render(require('example'),document.getElementById('component-preview'));
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            'default': obj
+        };
+    }
+    require('react-dom').render(_interopRequireDefault(require('example')).default,document.getElementById('component-preview'));
   });
   </script>
 </div>
